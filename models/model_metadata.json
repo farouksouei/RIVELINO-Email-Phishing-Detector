@@ -1,0 +1,186 @@
+{
+  "model_type": "GradientBoostingClassifier",
+  "training_date": "2026-05-29",
+  "dataset_size": 9072,
+  "train_size": 7257,
+  "test_size": 1815,
+  "num_features": 52,
+  "feature_names": [
+    "from_display_domain_mismatch",
+    "from_replyto_domain_mismatch",
+    "reply_to_present",
+    "num_received_headers",
+    "received_chain_suspicious",
+    "sender_is_freemail",
+    "sender_has_subdomain",
+    "x_mailer_suspicious",
+    "subject_has_re_fw_prefix",
+    "multiple_to_recipients",
+    "header_encoding_anomaly",
+    "date_header_mismatch",
+    "total_urls",
+    "num_urls_with_ip",
+    "num_url_shorteners",
+    "num_display_href_mismatches",
+    "max_url_length",
+    "avg_url_length",
+    "num_urls_with_at_symbol",
+    "num_urls_with_hex_encoding",
+    "https_ratio",
+    "num_urls_with_port",
+    "num_urls_with_suspicious_tld",
+    "num_urls_with_login_keyword",
+    "subdomain_depth_max",
+    "body_length",
+    "urgency_keyword_count",
+    "urgency_keyword_density",
+    "credential_request",
+    "financial_keyword_count",
+    "action_phrase_count",
+    "contains_html_form",
+    "contains_html_input",
+    "hidden_text_detected",
+    "image_to_text_ratio",
+    "greeting_is_generic",
+    "contains_threatening_language",
+    "excessive_exclamation_marks",
+    "capitalized_word_ratio",
+    "spelling_error_estimate",
+    "attachment_count",
+    "has_dangerous_attachment",
+    "dangerous_attachment_count",
+    "has_double_extension",
+    "mime_tree_depth",
+    "num_base64_parts",
+    "has_embedded_image",
+    "content_type_mismatch",
+    "spf_pass",
+    "dkim_pass",
+    "dmarc_pass",
+    "auth_score"
+  ],
+  "threshold": 0.5,
+  "accuracy": 0.988981,
+  "precision": 0.987124,
+  "recall": 0.970464,
+  "f1_score": 0.978723,
+  "roc_auc": 0.998614,
+  "cv_f1_mean": 0.9601829953732921,
+  "cv_f1_std": 0.01798654933627068,
+  "top_features": [
+    {
+      "name": "spelling_error_estimate",
+      "importance": 0.290426
+    },
+    {
+      "name": "excessive_exclamation_marks",
+      "importance": 0.152735
+    },
+    {
+      "name": "num_received_headers",
+      "importance": 0.075479
+    },
+    {
+      "name": "total_urls",
+      "importance": 0.071829
+    },
+    {
+      "name": "body_length",
+      "importance": 0.068823
+    },
+    {
+      "name": "max_url_length",
+      "importance": 0.056362
+    },
+    {
+      "name": "capitalized_word_ratio",
+      "importance": 0.042348
+    },
+    {
+      "name": "action_phrase_count",
+      "importance": 0.036339
+    },
+    {
+      "name": "image_to_text_ratio",
+      "importance": 0.029272
+    },
+    {
+      "name": "financial_keyword_count",
+      "importance": 0.023165
+    },
+    {
+      "name": "urgency_keyword_density",
+      "importance": 0.022864
+    },
+    {
+      "name": "sender_is_freemail",
+      "importance": 0.022751
+    },
+    {
+      "name": "greeting_is_generic",
+      "importance": 0.021211
+    },
+    {
+      "name": "x_mailer_suspicious",
+      "importance": 0.012812
+    },
+    {
+      "name": "multiple_to_recipients",
+      "importance": 0.008565
+    },
+    {
+      "name": "num_base64_parts",
+      "importance": 0.008401
+    },
+    {
+      "name": "subject_has_re_fw_prefix",
+      "importance": 0.00702
+    },
+    {
+      "name": "avg_url_length",
+      "importance": 0.006938
+    },
+    {
+      "name": "reply_to_present",
+      "importance": 0.006264
+    },
+    {
+      "name": "https_ratio",
+      "importance": 0.005986
+    }
+  ],
+  "rf_metrics": {
+    "accuracy": 0.985124,
+    "precision": 0.974522,
+    "recall": 0.968354,
+    "f1": 0.971429,
+    "roc_auc": 0.998606,
+    "confusion_matrix": [
+      [
+        1329,
+        12
+      ],
+      [
+        15,
+        459
+      ]
+    ]
+  },
+  "gb_metrics": {
+    "accuracy": 0.988981,
+    "precision": 0.987124,
+    "recall": 0.970464,
+    "f1": 0.978723,
+    "roc_auc": 0.998614,
+    "confusion_matrix": [
+      [
+        1335,
+        6
+      ],
+      [
+        14,
+        460
+      ]
+    ]
+  }
+}

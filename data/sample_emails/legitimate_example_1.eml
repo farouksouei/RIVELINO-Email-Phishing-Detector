@@ -1,0 +1,28 @@
+From: GitHub <noreply@github.com>
+To: developer@example.com
+Subject: [GitHub] A new public key was added to your account
+Date: Thu, 29 May 2026 09:00:00 +0000
+Received: from smtp.github.com (smtp.github.com [192.30.252.1]) by mx.example.com with ESMTPS; Thu, 29 May 2026 09:00:01 +0000
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi developer,
+
+A new public SSH key was added to your GitHub account.
+
+Key fingerprint: SHA256:abc123def456...
+
+If you added this key, no further action is needed.
+
+If you did NOT add this key, please immediately:
+1. Visit https://github.com/settings/keys to remove the unauthorized key
+2. Change your password at https://github.com/password_reset
+3. Enable two-factor authentication at https://github.com/settings/two_factor_authentication
+
+Thanks,
+The GitHub Team
+
+---
+You're receiving this email because a new SSH key was added to the GitHub account associated with this address.
+To stop receiving these emails, visit https://github.com/settings/notifications

@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  phishing-detector:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=models/phishing_detector.joblib
+      - FEATURE_CONFIG_PATH=training/feature_config.json
+      - DEBUG=false
+    volumes:
+      - ../models:/app/models
+      - ../data/sample_emails:/app/data/sample_emails

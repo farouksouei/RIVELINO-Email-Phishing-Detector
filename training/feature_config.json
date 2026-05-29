@@ -1,0 +1,86 @@
+{
+  "feature_names": [
+    "from_display_domain_mismatch",
+    "from_replyto_domain_mismatch",
+    "reply_to_present",
+    "num_received_headers",
+    "received_chain_suspicious",
+    "sender_is_freemail",
+    "sender_has_subdomain",
+    "x_mailer_suspicious",
+    "subject_has_re_fw_prefix",
+    "multiple_to_recipients",
+    "header_encoding_anomaly",
+    "date_header_mismatch",
+    "total_urls",
+    "num_urls_with_ip",
+    "num_url_shorteners",
+    "num_display_href_mismatches",
+    "max_url_length",
+    "avg_url_length",
+    "num_urls_with_at_symbol",
+    "num_urls_with_hex_encoding",
+    "https_ratio",
+    "num_urls_with_port",
+    "num_urls_with_suspicious_tld",
+    "num_urls_with_login_keyword",
+    "subdomain_depth_max",
+    "body_length",
+    "urgency_keyword_count",
+    "urgency_keyword_density",
+    "credential_request",
+    "financial_keyword_count",
+    "action_phrase_count",
+    "contains_html_form",
+    "contains_html_input",
+    "hidden_text_detected",
+    "image_to_text_ratio",
+    "greeting_is_generic",
+    "contains_threatening_language",
+    "excessive_exclamation_marks",
+    "capitalized_word_ratio",
+    "spelling_error_estimate",
+    "attachment_count",
+    "has_dangerous_attachment",
+    "dangerous_attachment_count",
+    "has_double_extension",
+    "mime_tree_depth",
+    "num_base64_parts",
+    "has_embedded_image",
+    "content_type_mismatch",
+    "spf_pass",
+    "dkim_pass",
+    "dmarc_pass",
+    "auth_score"
+  ],
+  "num_features": 52,
+  "groups": {
+    "header": [
+      "from_display_domain_mismatch", "from_replyto_domain_mismatch", "reply_to_present",
+      "num_received_headers", "received_chain_suspicious", "sender_is_freemail",
+      "sender_has_subdomain", "x_mailer_suspicious", "subject_has_re_fw_prefix",
+      "multiple_to_recipients", "header_encoding_anomaly", "date_header_mismatch"
+    ],
+    "url": [
+      "total_urls", "num_urls_with_ip", "num_url_shorteners", "num_display_href_mismatches",
+      "max_url_length", "avg_url_length", "num_urls_with_at_symbol", "num_urls_with_hex_encoding",
+      "https_ratio", "num_urls_with_port", "num_urls_with_suspicious_tld",
+      "num_urls_with_login_keyword", "subdomain_depth_max"
+    ],
+    "body": [
+      "body_length", "urgency_keyword_count", "urgency_keyword_density", "credential_request",
+      "financial_keyword_count", "action_phrase_count", "contains_html_form",
+      "contains_html_input", "hidden_text_detected", "image_to_text_ratio",
+      "greeting_is_generic", "contains_threatening_language", "excessive_exclamation_marks",
+      "capitalized_word_ratio", "spelling_error_estimate"
+    ],
+    "structural": [
+      "attachment_count", "has_dangerous_attachment", "dangerous_attachment_count",
+      "has_double_extension", "mime_tree_depth", "num_base64_parts",
+      "has_embedded_image", "content_type_mismatch"
+    ],
+    "auth": [
+      "spf_pass", "dkim_pass", "dmarc_pass", "auth_score"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/raw/
+data/processed/
+models/*.joblib
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.idea/
+*.iml

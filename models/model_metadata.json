@@ -1,5 +1,6 @@
 {
   "model_type": "GradientBoostingClassifier",
+  "sklearn_version": "1.8.0",
   "training_date": "2026-05-29",
   "dataset_size": 9072,
   "train_size": 7257,

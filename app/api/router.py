@@ -5,5 +5,5 @@ api_router = APIRouter(prefix="/api/v1")
 
 api_router.include_router(health.router, tags=["health"])
 api_router.include_router(analyze.router, tags=["analysis"])
-api_router.include_router(batch.router, tags=["analysis"])
+api_router.include_router(batch.router, tags=["batch"])
 api_router.include_router(model_info.router, tags=["model"])
